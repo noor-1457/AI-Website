@@ -15,7 +15,9 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex lg:flex-1">
               <Link to="/" className="-m-1.5 p-1.5">
-                <span className="text-sm font-bold text-white">Code Celix</span>
+                <span className="font-bold text-white text-2xl ">
+                  Code Celix
+                </span>
               </Link>
             </div>
 
@@ -57,7 +59,10 @@ export default function Navbar() {
               <Link to="#" className="text-sm font-semibold text-white">
                 Company
               </Link>
-              <Link to="/case-studies" className="text-sm font-semibold text-white">
+              <Link
+                to="/case-studies"
+                className="text-sm font-semibold text-white"
+              >
                 Case Studies
               </Link>
             </div>
@@ -65,7 +70,7 @@ export default function Navbar() {
             {/* Desktop Login */}
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link to="/login" className="text-sm font-semibold text-white">
-                Log in <span aria-hidden="true">&rarr;</span>
+                Contact us <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </nav>
@@ -137,14 +142,14 @@ export default function Navbar() {
                   className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                 Case Studies
+                  Case Studies
                 </Link>
                 <Link
                   to="#"
                   className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Log in
+                  Contact us
                 </Link>
               </div>
             </div>
