@@ -8,10 +8,7 @@ export default function Navbar() {
     <>
       <div className="bg-gray-900">
         <header className=" top-0 ">
-          <nav
-            className="flex  justify-between p-6 lg:px-8"
-            aria-label="Global"
-          >
+          <nav className="flex  justify-center p-6 lg:px-8" aria-label="Global">
             {/* Logo */}
             <div className="flex lg:flex-1">
               <Link to="/" className="-m-1.5 p-1.5">
@@ -46,40 +43,30 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Links */}
-            <div className="hidden lg:flex lg:gap-x-12">
+            <div className="hidden lg:flex lg:gap-x-12 justify-center">
               <Link to="/" className="text-sm font-semibold text-white">
                 Home
               </Link>
-              <Link to="#" className="text-sm font-semibold text-white">
+              <Link to="/" className="text-sm font-semibold text-white">
                 About us
               </Link>
-              <Link to="#" className="text-sm font-semibold text-white">
+              <Link to="/" className="text-sm font-semibold text-white">
                 FAQ
               </Link>
-              <Link to="#" className="text-sm font-semibold text-white">
+              <Link to="/" className="text-sm font-semibold text-white">
                 Company
               </Link>
-<<<<<<< HEAD
-=======
               <Link to="/contact" className="text-sm font-semibold text-white">
                 Contact Us
               </Link>
-              <Link to="pricing" className="text-sm font-semibold text-white">
+              <Link to="/pricing" className="text-sm font-semibold text-white">
                 Pricing
               </Link>
->>>>>>> 08b6682c13ac4e8560faab08db701e0a841d7fa7
               <Link
                 to="/case-studies"
                 className="text-sm font-semibold text-white"
               >
                 Case Studies
-              </Link>
-            </div>
-
-            {/* Desktop Login */}
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <Link to="/login" className="text-sm font-semibold text-white">
-                Contact us <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </nav>
