@@ -16,10 +16,10 @@ const CaseStudyCard = ({
     <div className="w-full max-w-sm bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
       
       {/* Top Blue Header */}
-      <div className="bg-blue-600 text-white p-4">
+      <div className="bg-gray-900 text-white p-4">
         <div className="flex justify-between items-start">
           <div>
-            <span className="text-xs bg-blue-800 px-3 py-1 rounded-full">{industry}</span>
+            <span className="text-xs bg-white text-gray-900 px-3 py-1 rounded-full">{industry}</span>
             <h3 className="text-lg font-bold mt-2">{title}</h3>
           </div>
           <div className="text-right">
@@ -56,7 +56,7 @@ const CaseStudyCard = ({
               {metric.icon === 'time' && <FaClock className="text-blue-600 mx-auto mb-1" />}
               {metric.icon === 'revenue' && <FaChartLine className="text-blue-600 mx-auto mb-1" />}
               <div className="font-bold text-gray-900">{metric.value}</div>
-              <div className="text-xs text-blue-600">{metric.label}</div>
+              <div className="text-xs text-gray-900">{metric.label}</div>
             </div>
           ))}
         </div>
@@ -68,7 +68,7 @@ const CaseStudyCard = ({
             {results.map((result, index) => (
               <div key={index} className="flex items-center justify-between p-2 bg-gray-50 rounded">
                 <span className="text-gray-700">{result.label}</span>
-                <span className="font-bold text-blue-600">{result.value}</span>
+                <span className="font-bold text-gray-900">{result.value}</span>
               </div>
             ))}
           </div>
