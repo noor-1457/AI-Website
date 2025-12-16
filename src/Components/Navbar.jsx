@@ -59,6 +59,15 @@ export default function Navbar() {
               <Link to="#" className="text-sm font-semibold text-white">
                 Company
               </Link>
+<<<<<<< HEAD
+=======
+              <Link to="/contact" className="text-sm font-semibold text-white">
+                Contact Us
+              </Link>
+              <Link to="pricing" className="text-sm font-semibold text-white">
+                Pricing
+              </Link>
+>>>>>>> 08b6682c13ac4e8560faab08db701e0a841d7fa7
               <Link
                 to="/case-studies"
                 className="text-sm font-semibold text-white"
