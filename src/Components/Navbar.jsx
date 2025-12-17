@@ -8,7 +8,10 @@ export default function Navbar() {
     <>
       <div className="bg-gray-900">
         <header className=" top-0 ">
-          <nav className="flex  justify-center p-6 lg:px-8" aria-label="Global">
+          <nav
+            className="flex  justify-center p-6 lg:px-8"
+            aria-label="Global"
+          >
             {/* Logo */}
             <div className="flex lg:flex-1">
               <Link to="/" className="-m-1.5 p-1.5">
@@ -48,24 +51,21 @@ export default function Navbar() {
                 Home
               </Link>
               <Link to="/" className="text-sm font-semibold text-white">
-                About us
-              </Link>
-              <Link to="/" className="text-sm font-semibold text-white">
                 FAQ
-              </Link>
+              </Link>   
               <Link to="/" className="text-sm font-semibold text-white">
-                Company
-              </Link>
+                About
+              </Link>   
               <Link to="/contact" className="text-sm font-semibold text-white">
                 Contact Us
               </Link>
               <Link to="/pricing" className="text-sm font-semibold text-white">
                 Pricing
               </Link>
-              <Link
-                to="/case-studies"
-                className="text-sm font-semibold text-white"
-              >
+              <Link to="/how-it-works" className="text-sm font-semibold text-white">
+                How It Works
+              </Link>
+              <Link to="/case-studies" className="text-sm font-semibold text-white">
                 Case Studies
               </Link>
             </div>
