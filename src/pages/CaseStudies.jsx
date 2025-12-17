@@ -65,7 +65,7 @@
             {/* Header */}
             <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Real <span className="text-blue-600">AI Success</span> Stories
+                Real <span className="text-gray-900">AI Success</span> Stories
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
                 See how businesses transformed with AI-powered automation
@@ -81,7 +81,7 @@
             </div>
 
             {/* Stats */}
-            <div className="mt-16 bg-blue-600 text-white rounded-xl p-8">
+            <div className="mt-16 bg-gray-900 text-white rounded-xl p-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
                 <div className="text-3xl font-bold">95%</div>
