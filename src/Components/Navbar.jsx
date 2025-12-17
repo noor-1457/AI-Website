@@ -54,8 +54,8 @@ export default function Navbar() {
                 FAQ
               </Link>   
               <Link to="/" className="text-sm font-semibold text-white">
-                About
-              </Link>   
+                Company
+              </Link>
               <Link to="/contact" className="text-sm font-semibold text-white">
                 Contact Us
               </Link>
@@ -67,6 +67,9 @@ export default function Navbar() {
               </Link>
               <Link to="/case-studies" className="text-sm font-semibold text-white">
                 Case Studies
+              </Link>
+              <Link to="/contact" className="text-sm font-semibold text-white">
+                Contact Us
               </Link>
             </div>
           </nav>
@@ -134,6 +137,13 @@ export default function Navbar() {
                   Company
                 </Link>
                 <Link
+                  to="/industries"
+                  className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Industries
+                </Link>
+                <Link
                   to="/case-studies"
                   className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                   onClick={() => setMobileMenuOpen(false)}
@@ -141,7 +151,7 @@ export default function Navbar() {
                   Case Studies
                 </Link>
                 <Link
-                  to="#"
+                  to="/contact"
                   className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                   onClick={() => setMobileMenuOpen(false)}
                 >
