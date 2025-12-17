@@ -1,6 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function AutomationOverview() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <section class="bg-gray-900 text-gray-300 py-20">
@@ -8,18 +16,22 @@ export default function AutomationOverview() {
           {/* <!-- Heading --> */}
           <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-white">
-              Smart Automation for Modern Businesses
+              Codecelix AI Automation
             </h2>
             <p class="mt-4 text-gray-400">
-              Eliminate repetitive tasks, boost productivity, and scale your
-              business with AI-powered automation solutions.
+              Our platform helps businesses streamline operations with smart,
+              AI-powered automation. We reduce manual work, boost efficiency,
+              and enable faster growth through intelligent, scalable solutions.
             </p>
           </div>
 
           {/* <!-- Features --> */}
           <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* <!-- Card 1 --> */}
-            <div class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition">
+            <div
+              class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition"
+              data-aos="fade-right"
+            >
               <div class="text-indigo-500 text-3xl mb-4">⚙️</div>
               <h3 class="text-xl font-semibold text-white mb-3">
                 Workflow Automation
@@ -31,7 +43,10 @@ export default function AutomationOverview() {
             </div>
 
             {/* <!-- Card 2 --> */}
-            <div class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition">
+            <div
+              class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition"
+              data-aos="fade-down"
+            >
               <div class="text-indigo-500 text-3xl mb-4">🤖</div>
               <h3 class="text-xl font-semibold text-white mb-3">
                 AI-Driven Decisions
@@ -43,7 +58,10 @@ export default function AutomationOverview() {
             </div>
 
             {/* <!-- Card 3 --> */}
-            <div class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition">
+            <div
+              class="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition"
+              data-aos="fade-left"
+            >
               <div class="text-indigo-500 text-3xl mb-4">📈</div>
               <h3 class="text-xl font-semibold text-white mb-3">
                 Scalable Growth
@@ -59,7 +77,7 @@ export default function AutomationOverview() {
           <div class="text-center mt-16">
             <a
               href="#"
-              class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-indigo-700 transition"
+              class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-900 transition"
             >
               Get Started with Automation
             </a>

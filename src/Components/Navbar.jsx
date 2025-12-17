@@ -44,27 +44,45 @@ export default function Navbar() {
 
             {/* Desktop Links */}
             <div className="hidden lg:flex lg:gap-x-12 justify-center">
-              <Link to="/" className="text-sm font-semibold text-white">
+              <Link
+                to="/"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 Home
               </Link>
-              <Link to="/" className="text-sm font-semibold text-white">
+              <Link
+                to="/"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 About us
               </Link>
-              <Link to="/" className="text-sm font-semibold text-white">
+              <Link
+                to="/"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 FAQ
               </Link>
-              <Link to="/" className="text-sm font-semibold text-white">
+              <Link
+                to="/"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 Company
               </Link>
-              <Link to="/contact" className="text-sm font-semibold text-white">
+              <Link
+                to="/contact"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 Contact Us
               </Link>
-              <Link to="/pricing" className="text-sm font-semibold text-white">
+              <Link
+                to="/pricing"
+                className="text-sm font-semibold text-white hover:text-blue-600"
+              >
                 Pricing
               </Link>
               <Link
                 to="/case-studies"
-                className="text-sm font-semibold text-white"
+                className="text-sm font-semibold text-white hover:text-blue-600"
               >
                 Case Studies
               </Link>
