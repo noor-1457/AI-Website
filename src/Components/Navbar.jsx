@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="bg-gray-900">
       <nav className="flex items-center p-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-white">
+        <Link to="/" className="text-xl md:text-2xl font-bold text-white">
           Code Celix
         </Link>
 
@@ -31,7 +31,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="px-4 py-2 rounded-md bg-gray-800 text-white text-sm font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-300"
+                  className="px-4 py-2 rounded-md bg-gray-800 text-white text-[15px] font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-300"
                 >
                   {item.name}
                 </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Contact Us - Highlighted */}
           <Link
             to="/contact"
-            className="ml-4 px-5 py-2 rounded-md bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-all duration-300"
+            className="ml-4 px-5 py-2 rounded-md bg-indigo-600 text-white text-[15px] font-semibold hover:bg-indigo-500 transition-all duration-300"
           >
             Contact Us
           </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
               fill="none"
               stroke="currentColor"
               strokeWidth={1.5}
-              className="h-6 w-6"
+              className="w-6 h-6 md:h-7 md:w-7 font-bold"
               aria-hidden="true"
             >
               <path
@@ -76,7 +76,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-50 bg-gray-900 bg-opacity-95 lg:hidden">
           <div className="flex items-center justify-between p-6">
-            <Link to="/" className="text-2xl font-bold text-white">
+            <Link to="/" className="text-xl font-bold text-white">
               Code Celix
             </Link>
             <button
@@ -89,7 +89,7 @@ export default function Navbar() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={1.5}
-                className="h-6 w-6"
+                className="w-6 h-6 md:h-7 md:w-7 font-bold"
                 aria-hidden="true"
               >
                 <path
@@ -107,7 +107,7 @@ export default function Navbar() {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-indigo-500 hover:text-white transition-all duration-300"
+                className="block rounded-lg px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-500 hover:text-white transition-all duration-300"
               >
                 {item.name}
               </Link>

@@ -39,7 +39,7 @@ const HowItWork = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="w-full shadow-md hover:border-2 border-gray-900 flex flex-col items-center text-center bg-gray-50 p-6 rounded-xl hover:-translate-y-1 transition-all duration-300"
+              className="w-full shadow-md hover:border-2 border-gray-900 flex flex-col items-center text-center bg-gray-50 p-6 rounded-xl hover:-translate-y-2 transition-all duration-300"
             >
               <div className="bg-gray-900 text-white rounded-full w-18 h-18 flex items-center justify-center mb-4">
                 {step.icon}

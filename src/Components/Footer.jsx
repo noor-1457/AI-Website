@@ -80,62 +80,62 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3 text-sm">
-                <FaEnvelope className="text-indigo-400" />
-                <a href="mailto:contact@codecelix.com" className="hover:text-white transition">
+                <FaEnvelope className="w-5 h-5 text-indigo-400" />
+                <a href="mailto:contact@codecelix.com" className="hover:text-white text-base transition">
                   contact@codecelix.com
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <FaPhone className="text-indigo-400" />
-                <a href="tel:+1234567890" className="hover:text-white transition">
+                <FaPhone className="w-5 h-5 text-indigo-400" />
+                <a href="tel:+1234567890" className="hover:text-white transition text-base ">
                   +1 (234) 567-890
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <FaMapMarkerAlt className="text-indigo-400" />
-                <span>Remote · Global</span>
+                <FaMapMarkerAlt className="w-5 h-5 text-indigo-400" />
+                <span className="text-base ">Remote · Global</span>
               </div>
             </div>
 
             {/* Social Links */}
             <div>
-              <h4 className="text-white font-semibold mb-3 text-sm">Follow Us</h4>
+              <h4 className="text-white font-semibold mb-3 text-base">Follow Us</h4>
               <div className="flex gap-3">
                 <a
                   href="https://www.facebook.com/CodeCelix"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-10 w-10 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
+                  className="h-11 w-11 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
                   aria-label="Facebook"
                 >
-                  <FaFacebookF />
+                  <FaFacebookF className="w-7 h-7" />
                 </a>
                 <a
                   href="https://twitter.com/codecelix"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-10 w-10 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
+                  className="h-11 w-11 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
                   aria-label="Twitter"
                 >
-                  <FaTwitter />
+                  <FaTwitter className="w-7 h-7" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/codecelix"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-10 w-10 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
+                  className="h-11 w-11 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
                   aria-label="LinkedIn"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="w-7 h-7" />
                 </a>
                 <a
                   href="https://www.instagram.com/codecelix/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-10 w-10 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
+                  className="h-11 w-11 rounded-lg border border-gray-700 bg-gray-800/50 flex items-center justify-center hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white transition"
                   aria-label="Instagram"
                 >
-                  <FaInstagram />
+                  <FaInstagram className="w-7 h-7" />
                 </a>
               </div>
             </div>
@@ -215,27 +215,13 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-              Legal
-            </h3>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    to={link.to}
-                    className="text-sm text-gray-400 hover:text-indigo-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            
           </div>
         </div>
 
         {/* Newsletter Section */}
         <div className="border-t border-gray-800 pt-12 mb-12">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-white mb-2">
@@ -255,7 +241,7 @@ export default function Footer() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
-                  className="px-4 py-3 rounded-lg border border-gray-700 bg-gray-800/50 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 w-full sm:w-64"
+                  className="px-4 py-3 rounded-lg border border-gray-700 bg-gray-700/50 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 w-full sm:w-64"
                 />
                 <button
                   type="submit"

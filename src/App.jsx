@@ -9,6 +9,8 @@ import Pricing from "./pages/PricingPage";
 import Contact from "./pages/Contact";
 import HowItWork from "./pages/HowItWork"; // <-- added import
 import Solutions from "./pages/Solutions";
+import HowItWork from "./pages/HowItWork";
+import Industries from "./pages/Industries";
 
 function App() {
   const location = useLocation();
@@ -28,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/how-it-works" element={<HowItWork />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/industries" element={<Industries />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/solutions" element={<Solutions />} />
