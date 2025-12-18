@@ -12,7 +12,7 @@ export default function Stats() {
   }, []);
   return (
     <>
-      <div class="w-full bg-gray-900 pb-10 sm:py-24">
+      <div class="w-full bg-gray-900 py-10 sm:py-24">
         <div class="w-full mx-auto max-w-7xl px-6 lg:px-8">
           <dl class="w-full grid grid-cols-1 gap-x-5 md:gap-x-8 gap-y-8 md:gap-y-16 text-center lg:grid-cols-3">
             <div class="w-full mx-auto flex max-w-xs flex-col gap-y-4">
