@@ -4,12 +4,8 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Menu items for both desktop and mobile
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Company", path: "/company" },
     { name: "Industries", path: "/industries" },
     { name: "How It Works", path: "/how-it-works" },
     { name: "Case Studies", path: "/case-studies" },
@@ -19,27 +15,39 @@ export default function Navbar() {
 
   return (
     <header className="bg-gray-900">
-      <nav className="flex justify-between items-center p-6 lg:px-8">
+      <nav className="flex items-center p-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-white">
           Code Celix
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-x-8">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="text-sm font-semibold text-white hover:text-blue-600"
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="hidden lg:flex flex-1 items-center">
+          <div className="flex flex-1 justify-center gap-x-4">
+            {menuItems
+              .filter((item) => item.name !== "Contact Us")
+              .map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="px-4 py-2 rounded-md bg-gray-800 text-white text-sm font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-300"
+                >
+                  {item.name}
+                </Link>
+              ))}
+          </div>
+
+          {/* Contact Us - Highlighted */}
+          <Link
+            to="/contact"
+            className="ml-4 px-5 py-2 rounded-md bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-all duration-300"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden">
+        <div className="lg:hidden ml-auto">
           <button
             onClick={() => setMobileMenuOpen(true)}
             className="text-gray-200 p-2.5 rounded-md"
@@ -98,7 +106,7 @@ export default function Navbar() {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
+                className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-indigo-500 hover:text-white transition-all duration-300"
               >
                 {item.name}
               </Link>
