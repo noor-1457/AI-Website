@@ -12,10 +12,10 @@ export default function Stats() {
   }, []);
   return (
     <>
-      <div class="bg-gray-900 py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+      <div class="w-full bg-gray-900 pb-10 sm:py-24">
+        <div class="w-full mx-auto max-w-7xl px-6 lg:px-8">
+          <dl class="w-full grid grid-cols-1 gap-x-5 md:gap-x-8 gap-y-8 md:gap-y-16 text-center lg:grid-cols-3">
+            <div class="w-full mx-auto flex max-w-xs flex-col gap-y-4">
               <dt class="text-base/7 text-gray-400">
                 Transactions every 24 hours
               </dt>
@@ -26,7 +26,7 @@ export default function Stats() {
                 44 million
               </dd>
             </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="w-full mx-auto flex max-w-xs flex-col gap-y-4">
               <dt class="text-base/7 text-gray-400">Assets under holding</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl max-w-2xl text-center rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-2xl px-8 py-20 sm:px-12 "
@@ -35,7 +35,7 @@ export default function Stats() {
                 $119 trillion
               </dd>
             </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="w-full mx-auto flex max-w-xs flex-col gap-y-4">
               <dt class="text-base/7 text-gray-400">New users annually</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl max-w-2xl text-center rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-2xl px-8 py-20 sm:px-12"
