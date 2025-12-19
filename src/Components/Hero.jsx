@@ -38,7 +38,7 @@ export default function Hero() {
               </a>
               <a
                 href="#"
-                className="rounded-md bg-white text-nowrap px-4 py-3 text-sm font-semibold text-gray-900 shadow hover:bg-indigo-400"
+                className="rounded-md bg-white text-nowrap px-4 py-3 text-sm font-semibold text-gray-900 shadow "
               >
                 Book a demo →
               </a>

@@ -59,7 +59,7 @@ export default function Navbar() {
               fill="none"
               stroke="currentColor"
               strokeWidth={1.5}
-              className="w-6 h-6 md:h-7 md:w-7 font-bold"
+              className="w-7 h-7 font-bold"
               aria-hidden="true"
             >
               <path
@@ -89,7 +89,7 @@ export default function Navbar() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={1.5}
-                className="w-6 h-6 md:h-7 md:w-7 font-bold"
+                className="w-7 h-7 font-bold"
                 aria-hidden="true"
               >
                 <path

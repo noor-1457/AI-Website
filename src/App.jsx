@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import CaseStudies from "./pages/CaseStudies";
 import Pricing from "./pages/PricingPage";
 import Contact from "./pages/Contact";
-import HowItWork from "./pages/HowItWork"; // <-- added import
 import Solutions from "./pages/Solutions";
 import HowItWork from "./pages/HowItWork";
 import Industries from "./pages/Industries";

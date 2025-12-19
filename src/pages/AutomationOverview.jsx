@@ -20,7 +20,7 @@ export default function AutomationOverview() {
           {/* <!-- Features --> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* <!-- Card 1 --> */}
-            <Reveal className="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition">
+            <Reveal className="bg-gray-800 rounded-2xl p-8 hover:shadow-lg transition">
               <div className="text-indigo-500 text-3xl mb-4">⚙️</div>
               <h3 className="text-xl font-semibold text-white mb-3">
                 Workflow Automation
@@ -33,7 +33,7 @@ export default function AutomationOverview() {
 
             {/* <!-- Card 2 --> */}
             <Reveal
-              className="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition"
+              className="bg-gray-800 rounded-2xl p-8 hover:shadow-lg transition"
               delay={120}
             >
               <div className="text-indigo-500 text-3xl mb-4">🤖</div>
@@ -48,7 +48,7 @@ export default function AutomationOverview() {
 
             {/* <!-- Card 3 --> */}
             <Reveal
-              className="bg-gray-900 rounded-2xl p-8 hover:shadow-lg transition"
+              className="bg-gray-800 rounded-2xl p-8 hover:shadow-lg transition"
               delay={200}
             >
               <div className="text-indigo-500 text-3xl mb-4">📈</div>

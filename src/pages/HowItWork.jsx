@@ -1,41 +1,14 @@
 import React from "react";
-import { FaSearch, FaBrain, FaRocket, FaChartLine } from "react-icons/fa";
+import {steps} from '../constants'
 
 const HowItWork = () => {
-  const steps = [
-    {
-      icon: <FaSearch size={30} />,
-      title: "Business Analysis",
-      description:
-        "We start by understanding your business goals, challenges, and workflows to identify automation opportunities.",
-    },
-    {
-      icon: <FaBrain size={30} />,
-      title: "AI Model & Workflow Design",
-      description:
-        "Our team designs customized AI workflows and automation models tailored to your business needs.",
-    },
-    {
-      icon: <FaRocket size={30} />,
-      title: "Deployment & Integration",
-      description:
-        "We deploy the AI solution and integrate it smoothly with your existing systems and tools.",
-    },
-    {
-      icon: <FaChartLine size={30} />,
-      title: "Monitoring & Optimization",
-      description:
-        "We continuously monitor performance and optimize the system to ensure maximum efficiency and results.",
-    },
-  ];
-
   return (
     <div className="w-full bg-white min-h-screen py-8 md:py-16 ">
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-12 text-gray-900">
         HOW IT WORKS
       </h1>
       <div className="flex justify-center items-center p-5">
-        <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-5 md:space-x-6 space-y-8 md:space-y-0">
+        <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 md:gap-5 md:space-x-6 space-y-6 md:space-y-0">
           {steps.map((step, index) => (
             <div
               key={index}
